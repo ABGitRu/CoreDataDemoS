@@ -27,7 +27,6 @@ class TaskListViewController: UITableViewController {
         
         setupNavigationBar()
         fetchData()
-
     }
     
     private func setupNavigationBar() {
@@ -74,7 +73,7 @@ class TaskListViewController: UITableViewController {
 
 }
 extension TaskListViewController {
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         taskList.count
     }
     
