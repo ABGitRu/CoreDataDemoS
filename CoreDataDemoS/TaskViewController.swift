@@ -6,8 +6,13 @@
 //
 
 import UIKit
+import CoreData
 
 class TaskViewController: UIViewController {
+    
+    var delegate: TaskViewControllerDelegate?
+    
+    private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     private lazy var taskTextField: UITextField = {
         let textField = UITextField()
@@ -86,10 +91,25 @@ class TaskViewController: UIViewController {
     }
     
     @objc private func save() {
+        guard let entityDescription = NSEntityDescription
+                .entity(forEntityName: "Task", in: context) else { return }
+        guard let task = NSManagedObject(entity: entityDescription,
+                                         insertInto: context) as? Task else { return }
+        task.title = taskTextField.text
+        
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        }
+        delegate?.reloadData()
         dismiss(animated: true)
     }
     
     @objc private func cancel() {
+        delegate?.reloadData()
         dismiss(animated: true)
     }
 }
