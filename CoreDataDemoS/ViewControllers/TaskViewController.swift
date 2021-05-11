@@ -39,14 +39,12 @@ class TaskViewController: UITableViewController {
             (contextualAction, view, boolValue) in
             self.editTask(task: task)
         }
-        // ! - осознанный: если ошибся в написание пусть упадет, сразу поправлю
         editAction.backgroundColor = UIColor(named: "EditButton")
         
         let deleteAction = UIContextualAction(style: .destructive, title: "Удалить") {
             (contextualAction, view, boolValue) in
             self.deleteTask(task: task)
         }
-        // ! - осознанный: если ошибся в написание пусть упадет, сразу поправлю
         deleteAction.backgroundColor = UIColor(named: "DeleteButton")
         
         let swipeActions = UISwipeActionsConfiguration(actions: [deleteAction, editAction])
