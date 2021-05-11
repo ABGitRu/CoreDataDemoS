@@ -8,22 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		0415709926499FAE00437ED6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415709826499FAE00437ED6 /* AppDelegate.swift */; };
-		0415709D26499FAE00437ED6 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415709C26499FAE00437ED6 /* TaskListViewController.swift */; };
 		041570A326499FAE00437ED6 /* CoreDataDemoS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 041570A126499FAE00437ED6 /* CoreDataDemoS.xcdatamodeld */; };
 		041570A526499FB200437ED6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041570A426499FB200437ED6 /* Assets.xcassets */; };
 		041570A826499FB200437ED6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 041570A626499FB200437ED6 /* LaunchScreen.storyboard */; };
 		041570B62649A68E00437ED6 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041570B52649A68E00437ED6 /* TaskViewController.swift */; };
+		041570BB264ADDB800437ED6 /* TaskCellViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041570BA264ADDB800437ED6 /* TaskCellViewModelProtocol.swift */; };
+		041570BE264ADDEA00437ED6 /* TaskViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041570BD264ADDEA00437ED6 /* TaskViewModelProtocol.swift */; };
+		041570C4264ADECD00437ED6 /* TaskViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041570C3264ADECD00437ED6 /* TaskViewCell.swift */; };
+		041570C7264ADF5000437ED6 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041570C6264ADF5000437ED6 /* TaskCellViewModel.swift */; };
+		041570CA264ADF8D00437ED6 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041570C9264ADF8D00437ED6 /* TaskViewModel.swift */; };
+		041570CE264ADFC000437ED6 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041570CD264ADFC000437ED6 /* DataManager.swift */; };
+		041570D3264AE02B00437ED6 /* Extension + UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041570D2264AE02B00437ED6 /* Extension + UIColor.swift */; };
+		041570D9264AE07B00437ED6 /* CellConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041570D8264AE07B00437ED6 /* CellConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0415709526499FAE00437ED6 /* CoreDataDemoS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemoS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0415709826499FAE00437ED6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0415709C26499FAE00437ED6 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		041570A226499FAE00437ED6 /* CoreDataDemoS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataDemoS.xcdatamodel; sourceTree = "<group>"; };
 		041570A426499FB200437ED6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041570A726499FB200437ED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		041570A926499FB200437ED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		041570B52649A68E00437ED6 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		041570BA264ADDB800437ED6 /* TaskCellViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewModelProtocol.swift; sourceTree = "<group>"; };
+		041570BD264ADDEA00437ED6 /* TaskViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModelProtocol.swift; sourceTree = "<group>"; };
+		041570C3264ADECD00437ED6 /* TaskViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewCell.swift; sourceTree = "<group>"; };
+		041570C6264ADF5000437ED6 /* TaskCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
+		041570C9264ADF8D00437ED6 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		041570CD264ADFC000437ED6 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		041570D2264AE02B00437ED6 /* Extension + UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIColor.swift"; sourceTree = "<group>"; };
+		041570D8264AE07B00437ED6 /* CellConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,94 @@
 		0415709726499FAE00437ED6 /* CoreDataDemoS */ = {
 			isa = PBXGroup;
 			children = (
-				0415709826499FAE00437ED6 /* AppDelegate.swift */,
-				0415709C26499FAE00437ED6 /* TaskListViewController.swift */,
-				041570B52649A68E00437ED6 /* TaskViewController.swift */,
-				041570A426499FB200437ED6 /* Assets.xcassets */,
-				041570A626499FB200437ED6 /* LaunchScreen.storyboard */,
-				041570A926499FB200437ED6 /* Info.plist */,
+				041570CC264ADFA100437ED6 /* Models */,
+				041570C0264ADE1D00437ED6 /* Protocols */,
+				041570B8264ADD5C00437ED6 /* ViewControllers */,
+				041570DC264AE09800437ED6 /* Constants */,
+				041570D6264AE03600437ED6 /* Extensions */,
+				041570D1264ADFE000437ED6 /* DataManagers */,
+				041570B9264ADD6E00437ED6 /* Supporting */,
+				041570DF264AF90B00437ED6 /* Assets */,
+				041570DE264AF90000437ED6 /* Storyboards */,
 				041570A126499FAE00437ED6 /* CoreDataDemoS.xcdatamodeld */,
 			);
 			path = CoreDataDemoS;
+			sourceTree = "<group>";
+		};
+		041570B8264ADD5C00437ED6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				041570B52649A68E00437ED6 /* TaskViewController.swift */,
+				041570C3264ADECD00437ED6 /* TaskViewCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		041570B9264ADD6E00437ED6 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				0415709826499FAE00437ED6 /* AppDelegate.swift */,
+				041570A926499FB200437ED6 /* Info.plist */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		041570C0264ADE1D00437ED6 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				041570BA264ADDB800437ED6 /* TaskCellViewModelProtocol.swift */,
+				041570BD264ADDEA00437ED6 /* TaskViewModelProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		041570CC264ADFA100437ED6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				041570C6264ADF5000437ED6 /* TaskCellViewModel.swift */,
+				041570C9264ADF8D00437ED6 /* TaskViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		041570D1264ADFE000437ED6 /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				041570CD264ADFC000437ED6 /* DataManager.swift */,
+			);
+			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		041570D6264AE03600437ED6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				041570D2264AE02B00437ED6 /* Extension + UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		041570DC264AE09800437ED6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				041570D8264AE07B00437ED6 /* CellConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		041570DE264AF90000437ED6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				041570A626499FB200437ED6 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		041570DF264AF90B00437ED6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				041570A426499FB200437ED6 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,10 +229,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0415709D26499FAE00437ED6 /* TaskListViewController.swift in Sources */,
+				041570C7264ADF5000437ED6 /* TaskCellViewModel.swift in Sources */,
+				041570D9264AE07B00437ED6 /* CellConstants.swift in Sources */,
+				041570BE264ADDEA00437ED6 /* TaskViewModelProtocol.swift in Sources */,
+				041570C4264ADECD00437ED6 /* TaskViewCell.swift in Sources */,
 				041570B62649A68E00437ED6 /* TaskViewController.swift in Sources */,
+				041570BB264ADDB800437ED6 /* TaskCellViewModelProtocol.swift in Sources */,
+				041570CA264ADF8D00437ED6 /* TaskViewModel.swift in Sources */,
 				041570A326499FAE00437ED6 /* CoreDataDemoS.xcdatamodeld in Sources */,
+				041570CE264ADFC000437ED6 /* DataManager.swift in Sources */,
 				0415709926499FAE00437ED6 /* AppDelegate.swift in Sources */,
+				041570D3264AE02B00437ED6 /* Extension + UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +380,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JCX8Z993GT;
-				INFOPLIST_FILE = CoreDataDemoS/Info.plist;
+				INFOPLIST_FILE = CoreDataDemoS/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,7 +399,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JCX8Z993GT;
-				INFOPLIST_FILE = CoreDataDemoS/Info.plist;
+				INFOPLIST_FILE = CoreDataDemoS/Supporting/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
